@@ -12,16 +12,6 @@ const corsOptions ={
 router.use(cors(corsOptions));
 
 router.post('/Login',Login);
-router.post('/AddCourse',checkToken,Add_Course);
-router.get('/ViewCourse',checkToken,View_Course);
-router.delete('/Delete_Course/:id',checkToken,Delete_Course);
-router.get('/Get_Single_Course/:id',checkToken,Get_Single_Course);
-router.get('/update_course/:id',checkToken,Get_Single_Course);
-
-
-
-
-
 
 
 module.exports = router;
