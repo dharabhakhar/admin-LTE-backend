@@ -9,7 +9,7 @@ const corsOptions ={
     credentials:true,            //access-control-allow-credentials:true    
     optionSuccessStatus:200
 }
-router.use(cors(corsOptions));
+router.use(cors());
 
 router.post('/Login',Login);
 
